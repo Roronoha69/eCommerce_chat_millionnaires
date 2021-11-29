@@ -20,4 +20,5 @@ class ItemsController < ApplicationController
 
   def items_params
     params.permit(:title, :description, :price)
+  end
 end
