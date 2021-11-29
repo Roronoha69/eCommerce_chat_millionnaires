@@ -9,6 +9,7 @@ gem 'table_print'
 gem 'devise'
 gem 'stripe'
 gem "letter_opener", group: :development
+gem 'bootstrap-sass'
 
 #gem 'bootstrap', '~> 5.1.3'
 
