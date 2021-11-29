@@ -1,8 +1,12 @@
-<head>
-<link src="app/assets/stylesheets/application.css">
-</head>
+<!DOCTYPE html>
+<html>
 
-<nav class="nav">
+
+<head>
+  <link src="app/assets/stylesheets/styles.css">
+</head>
+<body>
+    <nav class="nav">
         <div class="container">
             <div class="logo">
                 <a href="#">Your Logo</a>
@@ -43,6 +47,7 @@
 			</p>
     </div>
 
+<%= yield %>
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
@@ -58,3 +63,5 @@
             }
         });
     </script>
+</body>
+</html>
