@@ -1,2 +1,64 @@
-<h1>Items#show</h1>
-<p>Find me in app/views/items/show.html.erb</p>
+
+<html>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 50px;
+  border: 10px solid pink;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #2cb67d;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  border-radius: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  
+}
+
+.card h1 {
+  margin-top: 20px;
+}
+</style>
+
+
+
+
+
+
+<body style="background-image: url(https://images.pexels.com/photos/4321069/pexels-photo-4321069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); background-size: cover; background-repeat:no-repeat;background-position:left top;">
+
+
+
+<div class="card">
+  <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Denim Jeans" style="width:100%">
+  <h1><%= @item.title %></h1>
+  <p class="price"><%= @item.price %> €</p>
+  <p><%= @item.description %></p>
+  <p><button>Add to Cart</button></p>
+</div>
+
+
+
+</body>
+</html>
