@@ -16,7 +16,16 @@ class ItemsController < ApplicationController
       description: Faker::Lorem.sentences(number: 5),
       price: Faker::Number.number(digits: 3)
     )
-    
+  end
+
+
+  def destroy
+    #@item = Item.find(params[:id])
+    @item.destroy
+    respond_to do |format|
+      format.html { redirect_to cart_url, notice: "Article was successfully destroyed." }
+      format.json { head :no_content }
+    end
   end
 
   private

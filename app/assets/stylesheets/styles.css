@@ -10,10 +10,11 @@
 
 
 body {
-  background-color: #fcbf49;
-  background-image: url(https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: rgb(2,0,36);
+  background: linear-gradient(8deg, rgba(2,0,36,1) 0%, rgb(100, 100, 182) 34%, rgb(141, 221, 236) 100%);
+  border-left: 5px solid white;
+  border-right: 5px solid white;
   
-  background-clip: no-repeat;
 }
 
 .wrapper {
@@ -27,6 +28,8 @@ body {
   border-radius: 20px;
   min-height: 450px;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 @media (max-width: 768px) {
   .card {
@@ -36,6 +39,8 @@ body {
 @media (max-width: 420px) {
   .card {
     min-height: 300px;
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
 }
 .card.card-has-bg {
@@ -92,29 +97,269 @@ body {
 }
 
 .fond {
-  background: url(https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center;
+  background: url(https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) no-repeat center center; background-size: 100%;
   position: absolute; /* Le fond est fixé en haut de la page */
   width: 100%; /* Il occupe toute la largeur de l'écran */
-  height: 300px; /* On met ici la même hauteur que le jumbotron */
-  top:0;
+  height: 400px; /* On met ici la même hauteur que le jumbotron */
+  top: 30px;
   left:0;
   z-index: -1;
+  border-bottom: 5px solid white;
+  margin-top: 20px;
  }
+
  .jumbotron {
   margin-bottom: 0px;
-  height: 300px;
-  color: white; /* Le texte sera affiché en blanc */
+  height: 400px;
+  color: rgb(255, 255, 255); /* Le texte sera affiché en blanc */
   text-shadow: black 0.3em 0.3em 0.3em;
   background:transparent;
   text-align: center;
-  font-size: 22px;
+  
  }
 
 .jumbotron h1 {
-margin-top: 25px;
+margin-top: 90px;
+text-align: center;
+font-size: 120px;
 }
 
 .jumbotron p {
-  margin-top: 25px;
+  margin-top: 45px;
+  text-align: center;
+  font-size: 60px;
+  }
+
+
+body {
+  background: rgb(36,35,65);
+background: linear-gradient(8deg, rgba(36,35,65,1) 0%, rgba(106,92,161,1) 35%, rgba(111,222,247,1) 100%, rgba(0,212,255,1) 100%);
 }
+
+
+.shop {
+  font-size: 10px
+}
+
+.space {
+  letter-spacing: 0.8px !important
+}
+
+.second a:hover {
+  color: rgb(92, 92, 92)
+}
+
+.active-2 {
+  color: rgb(92, 92, 92)
+}
+
+.breadcrumb>li+li:before {
+  content: "" !important
+}
+
+.breadcrumb {
+  padding: 0px;
+  font-size: 10px;
+  color: #aaa !important
+}
+
+.first {
+  background-color: white
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(0, 0, 0)
+}
+
+.btn-lg,
+.form-control-sm:focus,
+.form-control-sm:active,
+a:focus,
+a:active {
+  outline: none !important;
+  box-shadow: none !important
+}
+
+.form-control-sm:focus {
+  border: 1.5px solid #4bb8a9
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+  padding: .5rem 0.1rem;
+  font-size: 1rem;
+  border-radius: 0;
+  color: black !important;
+  background-color: white;
+  height: 2.8rem !important;
+  border-radius: 0.2rem !important
+}
+
+
+
+.btn:hover,
+.btn-lg:hover {
+  background-color: #4bb8a9!important
+}
+
+.btn-outline-primary {
+  background-color: #fff !important;
+  color: #4bb8a9 !important;
+  border-radius: 0.2rem !important;
+  border: 1px solid #4bb8a9
+}
+
+.btn-outline-primary:hover {
+  background-color: #4bb8a9 !important;
+  color: #fff !important;
+  border: 1px solid #4bb8a9
+}
+
+.card-2 {
+  margin-top: 40px !important
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 0px solid #aaaa !important
+}
+
+p {
+  font-size: 13px
+}
+
+.small {
+  font-size: 9px !important
+}
+
+.form-control-sm {
+  height: calc(2.2em + .5rem + 2px);
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: 0
+}
+
+.cursor-pointer {
+  cursor: pointer
+}
+
+.boxed {
+  padding: 0px 8px 0 8px;
+  background-color: #4bb8a9;
+  color: white
+}
+
+.boxed-1 {
+  padding: 0px 8px 0 8px;
+  color: black !important;
+  border: 1px solid #aaaa
+}
+
+.bell {
+  opacity: 0.5;
+  cursor: pointer
+}
+
+@media (max-width: 767px) {
+  .breadcrumb-item+.breadcrumb-item {
+      padding-left: 0
+  }
+}
+
+
+.footer-distributed {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 25px 50px;
+  border-top: 5px solid white;
+}
+
+.footer-distributed .footer-left p {
+  color: #6e6e6e;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
+
+.btn-warning {
+  background-color: #f8f9fa!important;
+  border-color: #f8f9fa!important;
+}
+
+
+
 

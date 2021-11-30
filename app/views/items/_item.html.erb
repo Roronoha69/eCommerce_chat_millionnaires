@@ -1,0 +1,21 @@
+
+
+
+<div class="card text-white card-has-bg click-col col-md-2" style="background-image:url('https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'); background-size: auto;">
+<div class="mr-1">
+  <img class="card-img d-none" src="images/photo-chat-1.jpeg" alt="Gustave">
+  <div class="card-img-overlay d-flex flex-column">    
+     <div class="card-body">
+      <strong class="card-meta mb-2"><%= item.title %></strong>
+      <h4 class="card-title mt-0 ">
+        <a class="text-white" href="<%= item_path(item.id) %>"><%= item.description %></a>
+      </h4>
+      <p><small><i class="far fa-clock"></i><%= item.price %> €</small></p>
+    </div>
+    <div class="card-footer">
+      <div class="media">
+      </div>
+    </div>  
+  </div>
+</div>
+</div>

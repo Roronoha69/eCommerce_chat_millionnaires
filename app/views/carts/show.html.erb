@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
+
+
+      <h1>New Cart</h1>
+
+<%= render 'form', cart: @cart %>
+
+<%= link_to 'Back', carts_path %>
+
+<%= total_price %>

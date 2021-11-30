@@ -11,7 +11,14 @@ require 'faker'
 20.times do
   Item.create(
     title: Faker::Creature::Cat.name,
-    description: Faker::Lorem.sentences(number: 5),
+    description: Faker::Lorem.sentence(word_count: 15),
     price: Faker::Number.number(digits: 3)
+  )
+end
+
+1.times do
+  cart = Cart.create(
+    user: User.all.sample
+    
   )
 end

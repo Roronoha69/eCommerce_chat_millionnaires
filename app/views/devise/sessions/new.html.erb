@@ -1,5 +1,10 @@
+<%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
 
-<body style="background-image: url(https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); background-size: cover; background-repeat:no-repeat;background-position:left top;">
+
+
+<body style="background-image: url(https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); background-size: 100%; background-repeat:no-repeat;">
 <div class="container" style="max-width: 350px;">
   <div class="row">
     <div class="col-md-12">
@@ -20,7 +25,7 @@
       <% if devise_mapping.rememberable? %>
           <div class="form-group">
             <%= f.check_box :remember_me %>
-            <%= f.label :Se_souvenir_de_moi, "Rester connecté" %>
+            <%= f.label :Rester_connecté?, "Rester connecté" %>
           </div>
       <% end %>
 
