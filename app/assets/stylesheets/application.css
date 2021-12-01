@@ -14,153 +14,87 @@
  *= require_self
  */
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 500px;
 
+.bloc_left_price {
+  color: #c01508;
   text-align: center;
-  font-family: arial;
-  margin-top: 50px;
-  border: 10px solid rgb(255, 255, 255);
-  border-radius: 15px;
-  margin-bottom: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-weight: bold;
+  font-size: 150%;
 }
-
-.price {
-  color: grey;
-  font-size: 22px;
+.category_block li:hover {
+  background-color: #007bff;
 }
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #2cb67d;
+.category_block li:hover a {
+  color: #ffffff;
+}
+.category_block li a {
+  color: #343a40;
+}
+.add_to_cart_block .price {
+  color: #c01508;
   text-align: center;
-  cursor: pointer;
-  width: 50%;
-  font-size: 18px;
-  border-radius: 15px;
+  font-weight: bold;
+  font-size: 200%;
+  margin-bottom: 0;
 }
-
-.card button:hover {
-  opacity: 0.7;
+.add_to_cart_block .price_discounted {
+  color: #343a40;
+  text-align: center;
+  text-decoration: line-through;
+  font-size: 140%;
 }
-
-.card h1 {
+.product_rassurance {
+  padding: 10px;
+  margin-top: 15px;
+  background: #ffffff;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+.product_rassurance .list-inline {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.product_rassurance .list-inline li:hover {
+  color: #343a40;
+}
+.reviews_product .fa-star {
+  color: gold;
+}
+.pagination {
   margin-top: 20px;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-
-.footer-distributed {
-  background-color: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  width: 100%;
-  text-align: left;
-  font: normal 16px sans-serif;
-  padding: 25px 50px;
-  border-top: 5px solid white;
+.carousel-inner {
+  border-radius: 20px;
+  border: 5px solid rgb(255, 255, 255);
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.footer-distributed .footer-left p {
-  color: #6e6e6e;
-  font-size: 14px;
-  margin: 0;
-}
-/* Footer links */
-
-.footer-distributed p.footer-links {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000000;
-  margin: 0 0 10px;
-  padding: 0;
-  transition: ease 0.25s;
+.card {
+  border-radius: 20px;
+  border: 5px solid rgb(255, 255, 255);
+  margin-top: 20px;
 }
 
-.footer-distributed p.footer-links a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-  transition: ease 0.25s;
+.card > .text-white {
+  color: #17a2b8!important;
 }
 
-.footer-distributed .footer-links a:before {
-  content: "·";
-  font-size: 20px;
-  left: 0;
-  color: rgb(0, 0, 0);
-  display: inline-block;
-  padding-right: 5px;
+.card > .card-header:first-child {
+  border-radius: 15px;
 }
 
-.footer-distributed .footer-links .link-1:before {
-  content: none;
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.footer-distributed .footer-right {
-  float: right;
-  margin-top: 6px;
-  max-width: 180px;
+.bg-light {
+  background-color: white!important;
 }
 
-.footer-distributed .footer-right a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2px;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  line-height: 35px;
-  margin-left: 3px;
-  transition: all 0.25s;
-}
-
-.footer-distributed .footer-right a:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-
-.footer-distributed p.footer-links a:hover {
-  text-decoration: underline;
-}
-
-/* Media Queries */
-
-@media (max-width: 600px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
-    text-align: center;
-  }
-  .footer-distributed .footer-right {
-    float: none;
-    margin: 0 auto 20px;
-  }
-  .footer-distributed .footer-left p.footer-links {
-    line-height: 1.8;
-  }
-}
-
-.col-md-12 {
-  margin-bottom: 400px;
-}
-
-.btn-primary {
-  border-color: #ffffff;
-}
-
-.form-control {
-  border: 1px solid #ffc9fc;
-}
-
-.row {
-  justify-content: space-around;
+.navbar {
+  border-bottom: 3px solid black;
 }

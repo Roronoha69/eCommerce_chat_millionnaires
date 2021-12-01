@@ -24,35 +24,35 @@ $('.navTrigger').click(function () {
 });
 
 var tImages = [ 
-'photo-chat-1.jpeg',
-'photo-chat-8.jpeg',
-'photo-chat-9.jpeg',
-'photo-chat-10.jpeg',
-'photo-chat-11.jpeg',
-'photo-chat-12.jpeg',
-'photo-chat-13.jpeg',
-'photo-chat-14.jpeg',
-'photo-chat-15.jpeg',
-'photo-chat-16.jpeg',
-'photo-chat-17.jpeg',
-'photo-chat-18.jpeg',
-'photo-chat-19.jpeg'
-];
-
-
-function demarage() {
-
+  'photo-chat-1.jpeg',
+  'photo-chat-8.jpeg',
+  'photo-chat-9.jpeg',
+  'photo-chat-10.jpeg',
+  'photo-chat-11.jpeg',
+  'photo-chat-12.jpeg',
+  'photo-chat-13.jpeg',
+  'photo-chat-14.jpeg',
+  'photo-chat-15.jpeg',
+  'photo-chat-16.jpeg',
+  'photo-chat-17.jpeg',
+  'photo-chat-18.jpeg',
+  'photo-chat-19.jpeg'
+  ];
+  
+  
+  function demarage() {
+  
+    var monImage = document.createElement('img');
+  
+    monImage.src = tImages[x];
+  
+    var maDiv = document.getElementById("bleu");
+  
+    maDiv.innerHTML = '';
+  
+    maDiv.appendChild(monImage);
+  
+  
+  window.addEventListener("load",demarrage);}
+  
   var monImage = document.createElement('img');
-
-  monImage.src = tImages[x];
-
-  var maDiv = document.getElementById("bleu");
-
-  maDiv.innerHTML = '';
-
-  maDiv.appendChild(monImage);
-
-
-window.addEventListener("load",demarrage);}
-
-var monImage = document.createElement('img');
