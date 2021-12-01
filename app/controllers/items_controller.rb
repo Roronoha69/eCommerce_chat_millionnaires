@@ -4,11 +4,16 @@ class ItemsController < ApplicationController
   
   def index
     @items = Item.all
+    @cart = Cart.first
+    puts @cart
   end
 
   def show
     @item = Item.find(params[:id])
+    @cart = Cart.first
+    puts @cart
   end
+
 
   def create
     @item = Item.create(
@@ -17,7 +22,6 @@ class ItemsController < ApplicationController
       price: Faker::Number.number(digits: 3)
     )
   end
-
 
   def destroy
     #@item = Item.find(params[:id])

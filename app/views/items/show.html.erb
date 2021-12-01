@@ -8,11 +8,20 @@
 
 <center>
 <div class="card">
- <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt="Denim Jeans" style="width:100%">
+ <!--<img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"  alt="Denim Jeans" style="width:100%"> -->
+ <%= image_tag 'pexels-photo-4587955.jpeg', width: 100 %>
   <h1><%= @item.title %></h1>
   <p class="price"><%= @item.price %> €</p>
   <p><%= @item.description %></p>
-  <p><%= link_to "Ajouter au panier",carts_path(), class: 'btn btn-success' %></p>
+  
+  <%= form_for @cart, remote: true  do |f|%>
+    <%= f.hidden_field :product_id, :value => @item.id %>
+    <%= f.number_field :quantity, :value => 1, :min =>  1%>
+    <%= f.submit "Add to Card ", class: 'btn btn-success' %>
+    <% end %>
+
+
 </div>
 </center>
+
 </body>
